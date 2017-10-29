@@ -918,4 +918,7 @@ h1 {
     line-height: 19px;
   }
 }
-
+.cart-div {
+  min-height: 800px;
+  padding: 30px 61px 61px;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="fc">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -44,12 +44,16 @@
     <div class="checkout-header-banner">
         <div class="w-container"><a href="#" class="link-block w-inline-block"><img src="https://daks2k3a4ib2z.cloudfront.net/59f0a120ffa06300013a036b/59f0a1fc6e24550001e2b0c3_AgentBuilderPro%20Logo.svg" width="240"></a></div>
     </div>
-<!-- has to be here because of chrome bug -->
-    {% include 'svg.inc.twig' %}
+    <div class="cart-div">
+        <div class="html-embed-2 w-embed" id="fc">
+        <!-- has to be here because of chrome bug -->
+            {% include 'svg.inc.twig' %}
 
-    {% import "utils.inc.twig" as utils %}
-    {% embed 'checkout.inc.twig' %}
-    {% endembed %}
+            {% import "utils.inc.twig" as utils %}
+            {% embed 'checkout.inc.twig' %}
+            {% endembed %}
+        </div>
+    </div>
 
     <!-- FC footer script insertion -->{% include template_from_string(fc_footer_content) %}<!-- /FC footer scripts -->
     <!--[if lt IE 10 ]>
